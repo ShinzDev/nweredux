@@ -9,12 +9,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.5s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  color-scheme: light;
+  background-color: #b70000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,10 +30,23 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  100% {
+    transform: rotate(360deg);
   }
-  to {
+  80%{
+    transform: translateY(1000px);
+  }
+  50%{
+    transform: translateX(400px);
+  }
+  30%{
+    transform: translateY(400px);
+  }
+  10%{
+    transform: rotate(180deg);
+  }
+  
+  0% {
     transform: rotate(360deg);
   }
 }
