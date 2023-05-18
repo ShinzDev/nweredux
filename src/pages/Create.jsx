@@ -5,7 +5,8 @@ const [name , setName] = useState('')
 const [email, setEmail] = useState('')
 
   const handlesubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault({handlesubmit})
+    console.log()
   }
 
   return (
